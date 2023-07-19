@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poker List</title>
+</head>
+
+<body>
+  <div id="addplayer">
+    <label for="player-name">Player Name:</label>
+    <input type="text" name="player-name" id="player-name">
+    <label for="phone-number">Phone Number:</label>
+    <input type="tel" name="phone-number" id="phone-number">
+    <label for="reservation-method">Reservation Method:</label>
+    <select name="reservation-method" id="reservation-method">
+      <option value="call-in" selected>Call In</option>
+      <option value="in-person">In Person</option>
+    </select>
+    <label for="time">Time</label>
+    <input type="time" name="time" id="time">
+    <label for="status">Status</label>
+    <select name="status" id="status">
+      <option value="not-checked-in" selected>Not Checked In</option>
+      <option value="checked-in">Checked In</option>
+      <option value="notified">Notified</option>
+      <option value="seated">Seated</option>
+    </select>
+    <button id="queue-player" mode="adding">Add Player</button>
+  </div>
+
+  <div id="tabledisplay">
+    <div class="table">
+      <h1>Poker 1</h1>
+      <table class="playerlist">
+        <thead>
+          <th>Spot</th>
+          <th>Name</th>
+          <th>Phone Number</th>
+          <th>Time/IP</th>
+          <th>Status</th>
+        </thead>
+
+        <tbody id="table-one"></tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
