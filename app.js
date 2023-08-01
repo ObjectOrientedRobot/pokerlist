@@ -123,7 +123,7 @@ function render() {
 }
 
 function updatePlayer(e) {
-  const playerID = e.target.attributes.playerid.value;
+ const playerID = e.target.attributes.playerid.value;
   const nameInput = document.querySelector('#player-name');
   const numberInput = document.querySelector('#phone-number');
   const methodInput = document.querySelector('#reservation-method');
