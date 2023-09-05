@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app.css">
   <title>Poker List</title>
 </head>
 
@@ -28,23 +29,86 @@
       <option value="notified">Notified</option>
       <option value="seated">Seated</option>
     </select>
+    <label for="notes">Notes</label>
+    <input type="text" name="notes" id="notes">
     <button id="queue-player" mode="adding">Add Player</button>
   </div>
 
-  <div id="tabledisplay">
-    <div class="table">
-      <h1>Poker 1</h1>
-      <table class="playerlist">
-        <thead>
-          <th>Spot</th>
-          <th>Name</th>
-          <th>Phone Number</th>
-          <th>Time/IP</th>
-          <th>Status</th>
-        </thead>
+  <div id="displayarea">
+    <div id="tabledisplay">
+      <div id="tablelists">
+        <h2>P1</h2>
+        <table id="table1">
+          <thead>
+            <tr>
+              <th>Spot</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Time/IP</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
 
-        <tbody id="table-one"></tbody>
-      </table>
+          <tbody class="pokertablebody">
+
+          </tbody>
+        </table>
+        <h2>P2</h2>
+        <table id="table2">
+          <thead>
+            <tr>
+              <th>Spot</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Time/IP</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+
+          <tbody class="pokertablebody">
+
+          </tbody>
+        </table>
+        <h2>P3</h2>
+        <table id="table3">
+          <thead>
+            <tr>
+              <th>Spot</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Time/IP</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+
+          <tbody class="pokertablebody">
+
+          </tbody>
+        </table>
+      </div>
+      <div id="waitlist">
+        <h2>Wait List</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Spot</th>
+              <th>Name</th>
+              <th>Phone Number</th>
+              <th>Time/IP</th>
+              <th>Status</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+
+          <tbody class="waitlisttablebody">
+
+          </tbody>
+
+        </table>
+      </div>
     </div>
   </div>
 
